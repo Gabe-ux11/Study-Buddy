@@ -1,0 +1,59 @@
+body {
+    font-family: sans-serif;
+    padding: 20px;
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #0077cc;
+}
+
+
+/* 2.2 — Element Selectors vs Class Selectors
+------------------------------------------------------ */
+
+/* Element selector: styles ALL <h1> elements */
+h1 {
+    color: #2a4d9b;        /* Example blue color */
+    font-size: 2rem;       /* Larger heading */
+    margin-bottom: 10px;
+}
+
+/* Class selector: can be applied to ANY element */
+.highlight {
+    background-color: #fff3b0;   /* Light yellow background */
+    color: #000;                 /* Dark text */
+    padding: 10px;               /* Some space inside the box */
+    border-left: 4px solid #e0a800;  /* Optional accent */
+}
+.info-box {
+    background-color: #e8f0ff; /* Light blue */
+    padding: 15px;            /* Space INSIDE the box */
+    border: 2px solid #4a76c9; /* Visible border */
+    margin: 20px 0;           /* Space OUTSIDE the box */
+    border-radius: 5px;       /* Optional, just makes it look nice */
+}
+
+/* Hidden element examples */
+.hide-with-display {
+    display: none;            /* Element removed from layout */
+}
+
+.hide-with-visibility {
+    visibility: hidden;       /* Element takes up space but is invisible */
+}
